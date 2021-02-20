@@ -6,7 +6,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
+      
         System.out.print("All devices: ");
         final List<String> list = List.of("monitor, keyboard, speakers, desk lamp.");
         System.out.println(list);
@@ -15,8 +15,6 @@ public class Main {
         Keyboard keyboard = new Keyboard();
         Speakers speakers = new Speakers();
         Lamp deskLamp = new Lamp();
-
-        // do zrobienia lista urzarzen : lista array list czy coskolwiek.
 
         deskLamp.setOn();
         deskLamp.setOff();
