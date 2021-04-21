@@ -1,6 +1,6 @@
 package pl.rafalhrubesz;
 
-public class Speakers {
+public class Speakers implements DevicesInterface {
 
     private static final String colour = "black";
     private static final String model = "CREATIVE";
@@ -8,12 +8,15 @@ public class Speakers {
     private boolean turnOn = false;
     private int currentVolume = 20;
 
-    public void turnOn(){
+    @Override
+    public void turnOn() {
         turnOn = true;
         System.out.println("Speakers are ON.");
     }
 
-    public void turnOff(){
+
+    @Override
+    public void turnOff() {
         turnOn = false;
         System.out.println("Speakers are OFF.");
     }

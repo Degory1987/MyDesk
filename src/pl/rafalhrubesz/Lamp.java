@@ -1,20 +1,20 @@
 package pl.rafalhrubesz;
 
-public class Lamp {
+public class Lamp implements DevicesInterface{
 
     private static final String colour = "white";
     private static boolean turnOn = false;
 
 
-    public void setOn(){
-        turnOn = true;
-        System.out.println("desk lamp is ON.");
+
+
+    @Override
+    public void turnOn() {
+        System.out.println("Lamp is now turn ON.");
     }
 
-    public void setOff(){
-        turnOn = false;
-        System.out.println("desk lamp is OFF.");
+    @Override
+    public void turnOff() {
+        System.out.println("Lamp is now turn OFF.");
     }
-
-
 }

@@ -1,6 +1,6 @@
 package pl.rafalhrubesz;
 
-public class Monitor {
+public class Monitor implements DevicesInterface {
 
     private static final String colour = "black";
     private static final int size = 21;
@@ -29,5 +29,15 @@ public class Monitor {
     public void setOff(){
         turnOn = false;
         System.out.println("Monitor is OFF.");
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("Monitor is turn ON.");
+    }
+
+    @Override
+    public void turnOff() {
+        System.out.println("Monitor is turn OFF.");
     }
 }

@@ -16,11 +16,11 @@ public class Main {
         Speakers speakers = new Speakers();
         Lamp deskLamp = new Lamp();
 
-        deskLamp.setOn();
-        deskLamp.setOff();
+        deskLamp.turnOn();
+        deskLamp.turnOff();
 
-        monitor.setOn();
-        monitor.setOff();
+        monitor.turnOn();
+        monitor.turnOff();
 
         speakers.turnOn();
         System.out.println("Current volume is " + speakers.getCurrentVolume());
